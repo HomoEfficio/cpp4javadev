@@ -7,5 +7,5 @@ add_executable(
         cpp4javadev
 #        main.cpp
         #        class-reference-pointer/class-instantiation-01.cpp
-        class-reference-pointer/reference-01.cpp
-)
+#        class-reference-pointer/reference-01.cpp
+        class-reference-pointer/pointer-reference-01.cpp)
