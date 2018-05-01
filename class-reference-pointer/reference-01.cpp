@@ -55,22 +55,15 @@ int main() {
 
     cout << endl;
 
-    cout << "hello.sayHello(\"???\")를 실행하면 뭐가 출력될까? Hello ???일까 Hi ???일까" << endl;
+    cout << "hello로 초기화 되어있던 rHello에 hi을 할당한 후, hello.sayHello(\"???\")를 실행하면 뭐가 출력될까?" << endl;
+    cout << "Hello ??? 일까, Hi ??? 일까" << endl;
     cout << "hello.sayHello(\"???\"): ";
     hello.sayHello("???");  // Hello로 출력될까 Hi로 출력될까?
     cout << "hello 객체의 주소: " << &hello << "    (9)" << endl;  // (1)과 같은 값이 출력된다.
     cout << "hello 객체의 주소는 예전과 동일한데 내용이 바뀌었다!!" << endl;
-    cout << "hello 객체를 가리키던 reference에 hi 객체를 할당하면서" << endl;
-    cout << "rHello가 다른 객체를 가리키도록 재할당되는 것이 아니라" << endl;
-    cout << "hello 객체가 가리키던 곳에 hi 객체의 얕은 복사본이 들어가버림" << endl;
-
-    char* pointer = const_cast<char *>("ABCDE");
-    cout << *pointer << endl;
-    cout << *(pointer + 2 * sizeof(char)) << endl;
-
-    int a = 1;
-    int& rA = a;
-    cout << rA << endl;
+    cout << "hello 객체를 가리키던 reference인 rHello에 hi 객체를 할당하면서" << endl;
+    cout << "rHello가 hi 객체를 가리키도록 재할당되는 것이 아니라" << endl;
+    cout << "hello 객체가 있던 자리에 hi 객체의 얕은 복사본이 들어가버림" << endl;
 
     return 0;
 }
