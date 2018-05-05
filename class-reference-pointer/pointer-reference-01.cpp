@@ -5,9 +5,9 @@
 using namespace std;
 
 int main() {
-    char* pointer = const_cast<char *>("ABCDE");
-    cout << *pointer << endl;
-    cout << *(pointer + 2 * sizeof(char)) << endl;
+    char* pChar = const_cast<char *>("ABCDE");
+    cout << *pChar << endl;
+    cout << *(pChar + 2 * sizeof(char)) << endl;
 
     int a = 1;
     int& rA = a;

@@ -8,7 +8,7 @@ add_executable(
 #        main.cpp
 #        class-reference-pointer/class-instantiation-01.cpp
 #        class-reference-pointer/reference-01.cpp
-#                class-reference-pointer/reference-02.cpp
+#        class-reference-pointer/reference-02.cpp
 #        class-reference-pointer/pointer-reference-01.cpp
 #        const/const-01.cpp
 #        const/const-02.cpp
