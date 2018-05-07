@@ -12,5 +12,6 @@ add_executable(
 #        class-reference-pointer/pointer-reference-01.cpp
 #        const/const-01.cpp
 #        const/const-02.cpp
-        const/const-03.cpp
-)
+#        const/const-03.cpp
+#        string/my-string.cpp
+        constructor/constructor-01.cpp)
